@@ -159,14 +159,16 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NewKeywords.cpp" />
+    <ClCompile Include="Test_Collections.cpp" />
+    <ClCompile Include="Test_Functions.cpp" />
+    <ClCompile Include="Test_NewKeywords.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="CTORS.cpp" />
+    <ClCompile Include="Test_CTORS.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Recollection_Lib\Recollection_Lib.vcxproj">

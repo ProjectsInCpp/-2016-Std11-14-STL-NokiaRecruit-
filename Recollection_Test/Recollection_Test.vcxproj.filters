@@ -26,10 +26,16 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CTORS.cpp">
+    <ClCompile Include="Test_CTORS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NewKeywords.cpp">
+    <ClCompile Include="Test_NewKeywords.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Collections.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
