@@ -32,6 +32,58 @@ namespace Recollection_Test
 			Assert::IsTrue(true);
 		}
 
+		TEST_METHOD(NativeInt_Statically_CTOR_NotHaveDefaultValues)
+		{
+			//arrange
+			int toAddVal0;
+			int toAddVal1;
+
+			//act
+
+			//assert
+			Assert::AreNotEqual(0, toAddVal0);
+			Assert::AreNotEqual(0, toAddVal1);
+		}
+
+		TEST_METHOD(NativeInt_Dynamically_CTOR_NotHaveDefaultValues)
+		{
+			//arrange
+			int* toAddVal0 = new int;
+			int* toAddVal1 = new int;
+
+			//act
+
+			//assert
+			Assert::AreNotEqual(0, *toAddVal0);
+			Assert::AreNotEqual(0, *toAddVal1);
+		}
+
+		TEST_METHOD(NativeInt_Dynamically_CTOR_WithValues)
+		{
+			//arrange
+			int* toAddVal0 = new int(2);
+			int* toAddVal1 = new int(3);
+
+			//act
+
+			//assert
+			Assert::AreEqual(2, *toAddVal0);
+			Assert::AreEqual(3, *toAddVal1);
+		}
+
+		TEST_METHOD(NativeFloat_Statically_CTOR_NotHaveDefaultValues)
+		{
+			//arrange
+			float toAddVal0;
+			float toAddVal1;
+
+			//act
+
+			//assert
+			Assert::AreNotEqual((float)0, toAddVal0);
+			Assert::AreNotEqual((float)0, toAddVal1);
+		}
+
 		TEST_METHOD(NativeArray_Statically_CTOR_True)
 		{
 			//arrange
@@ -46,6 +98,18 @@ namespace Recollection_Test
 			//assert
 			Assert::AreEqual(buffArray[0], toAddVal0);
 			Assert::AreEqual(buffArray[1], toAddVal1);
+		}
+
+		TEST_METHOD(NativeArray_Statically_CTOR_NoDefaultValues)
+		{
+			//arrange
+			int buffArray[2];
+
+			//act
+
+			//assert
+			Assert::AreNotEqual(0, buffArray[0]);
+			Assert::AreNotEqual(0, buffArray[1]);
 		}
 
 		TEST_METHOD(NativeArray_Dynamically_CTOR_True)
