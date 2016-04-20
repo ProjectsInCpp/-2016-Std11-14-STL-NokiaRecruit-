@@ -23,7 +23,20 @@ namespace Recollection_Test
 			rcVal = VariousFeatures::suma(inVal1, inVal2);
 
 			//assert
-			Assert::AreEqual(rcVal, expVal);
+			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(VariousFeatures_ChangeVal_ConstantMethod_0)
+		{
+			//arrange
+			int expVal = 0;
+			int rcVal;
+
+			//act
+			rcVal = (new VariousFeatures)->changeValAndReturn(3);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
 		}
 	};
 }
