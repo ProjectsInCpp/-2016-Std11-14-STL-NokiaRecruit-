@@ -12,5 +12,5 @@ int SomeClass::showValFromVariousFeaturePrivateMethod(VariousFeatures& aInput)
 
 int friendlyMethodGetVal(VariousFeatures* aInVal)
 {
-	return aInVal->val;
+	return aInVal->val; 
 }
