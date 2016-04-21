@@ -1,8 +1,10 @@
 #pragma once
 #include <vector>
 using namespace std;
+
 class VariousFeatures
 {
+	friend class SomeClass;
 private:
 	int val;
 	const int ID = 0;
