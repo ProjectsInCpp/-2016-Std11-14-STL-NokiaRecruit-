@@ -26,5 +26,20 @@ namespace Recollection_Test
 			//assert
 			Assert::AreEqual(expVal, rcVal);
 		}
+
+		TEST_METHOD(Friend_VariousFeatures_have_friendlyMethod_with_SomeClass_readPrivateVal_1)
+		{
+			//arrange
+			int expVal = 1;
+			int rcVal = -1;
+			VariousFeatures *initiatorOfFriendship = new VariousFeatures(1);
+			SomeClass* someMan = new SomeClass();
+
+			//act
+			rcVal = friendlyMethodGetVal(initiatorOfFriendship);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
 	};
 }

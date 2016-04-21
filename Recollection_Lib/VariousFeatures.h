@@ -10,6 +10,7 @@ private:
 	const int ID = 0;
 	static int counter;
 public:
+	friend int friendlyMethodGetVal(VariousFeatures* aInVal);
 	VariousFeatures();
 	VariousFeatures(int aVal);
 	VariousFeatures(int aVal,const int aID);
