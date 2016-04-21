@@ -214,7 +214,7 @@ namespace Recollection_Test
 			Assert::AreEqual(buffArray[0][0], 0);
 		}
 
-		TEST_METHOD(Pointer_InitializingList_InitConstVal_True)
+		TEST_METHOD(Pointer_InitializingList_InitConstVal_GetID_True)
 		{
 			//arrange
 			VariousFeatures *obj1 = new VariousFeatures(1,2);
@@ -223,6 +223,34 @@ namespace Recollection_Test
 
 			//act
 			rcVal = obj1->GetID();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(Object_InitializingList_InitConstVal_GetVal_True)
+		{
+			//arrange
+			VariousFeatures obj1(1, 2);
+			int expVal = 1;
+			int rcVal = -1;
+
+			//act
+			rcVal = obj1.GetVal();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounter_True)
+		{
+			//arrange
+			VariousFeatures obj1(1, 2);
+			int expVal = 0;
+			int rcVal = -1;
+
+			//act
+			rcVal = VariousFeatures::GetCounter();
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);

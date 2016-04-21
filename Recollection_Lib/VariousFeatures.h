@@ -3,10 +3,10 @@
 using namespace std;
 class VariousFeatures
 {
+private:
 	int val;
 	const int ID = 0;
-private:
-
+	static int counter;
 public:
 	VariousFeatures();
 	VariousFeatures(int aVal);
@@ -16,6 +16,7 @@ public:
 	static vector<int> sampleArray();
 	int changeValAndReturn(int aVal) const;
 	const int GetID();	
+	static int GetCounter();
 	int GetVal();
 };
 
