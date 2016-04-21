@@ -214,5 +214,19 @@ namespace Recollection_Test
 			Assert::AreEqual(buffArray[0][0], 0);
 		}
 
+		TEST_METHOD(Pointer_InitializingList_InitConstVal_True)
+		{
+			//arrange
+			VariousFeatures *obj1 = new VariousFeatures(1,2);
+			int expVal = 2;
+			int rcVal = -1;
+
+			//act
+			rcVal = obj1->GetID();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
 	};
 }
