@@ -242,7 +242,20 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, rcVal);
 		}
 
-		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounter_True)
+		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounterWithoutObject_True)
+		{
+			//arranges
+			int expVal = 0;
+			int rcVal = -1;
+
+			//act
+			rcVal = VariousFeatures::GetCounter();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounterWithObject_True)
 		{
 			//arrange
 			VariousFeatures obj1(1, 2);
@@ -250,7 +263,21 @@ namespace Recollection_Test
 			int rcVal = -1;
 
 			//act
-			rcVal = VariousFeatures::GetCounter();
+			rcVal = obj1.GetCounter();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounterWithPointer_True)
+		{
+			//arrange
+			VariousFeatures* obj1 = new VariousFeatures(1, 2);
+			int expVal = 0;
+			int rcVal = -1;
+
+			//act
+			rcVal = obj1->GetCounter();
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);

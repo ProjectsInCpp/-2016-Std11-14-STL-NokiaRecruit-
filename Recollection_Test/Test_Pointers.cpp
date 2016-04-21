@@ -28,5 +28,37 @@ namespace Recollection_Test
 			//assert
 			Assert::AreNotEqual(expVal, rcVal);
 		}
+
+		TEST_METHOD(Refference_ToVal_ChangeValueByRef)
+		{
+			//arrange
+			int inVal = 3;
+			int &refToVal = inVal;
+			int expVal = 1;
+			int newVal = 1;
+
+			//act
+			refToVal = newVal;
+			
+			//assert
+			Assert::AreEqual(expVal, inVal);
+			Assert::AreEqual(expVal, refToVal);
+		}
+
+		TEST_METHOD(Pointer_ToVal_ChangeValueByPointer)
+		{
+			//arrange
+			int inVal = 3;
+			int *refToVal = &inVal;
+			int expVal = 1;
+			int newVal = 1;
+
+			//act
+			*refToVal = newVal;
+
+			//assert
+			Assert::AreEqual(expVal, inVal);
+			Assert::AreEqual(expVal, *refToVal);
+		}
 	};
 }

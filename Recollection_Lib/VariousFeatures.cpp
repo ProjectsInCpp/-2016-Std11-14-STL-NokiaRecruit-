@@ -23,6 +23,15 @@ int VariousFeatures::GetCounter()
 	return VariousFeatures::counter;
 }
 
+void VariousFeatures::changeValAndReturnByRef(int outVal,int& initVal)
+{
+	initVal = outVal;
+}
+
+void VariousFeatures::changeValAndReturnWithPointer(int outVal, int* initVal)
+{
+	*initVal = outVal;
+}
 
 const int VariousFeatures::GetID() {
 	return this->ID;
@@ -42,7 +51,7 @@ vector<int> VariousFeatures::sampleArray()
 	return vector<int>();
 }
 
-int VariousFeatures::changeValAndReturn(int aVal) const
+int VariousFeatures::changeValAndReturnByRef(int aVal) const
 {
 	return this->val;
 }

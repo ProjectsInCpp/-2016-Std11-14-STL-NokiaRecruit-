@@ -14,9 +14,11 @@ public:
 	~VariousFeatures();
 	static int suma(int fst = 10, int snd = 10);
 	static vector<int> sampleArray();
-	int changeValAndReturn(int aVal) const;
+	int changeValAndReturnByRef(int aVal) const;
 	const int GetID();	
 	static int GetCounter();
+	static void changeValAndReturnByRef(int outVal, int& initVal);
+	static void changeValAndReturnWithPointer(int outVal, int* initVal);
 	int GetVal();
 };
 

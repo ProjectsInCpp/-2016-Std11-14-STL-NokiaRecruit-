@@ -33,10 +33,38 @@ namespace Recollection_Test
 			int rcVal;
 
 			//act
-			rcVal = (new VariousFeatures)->changeValAndReturn(3);
+			rcVal = (new VariousFeatures)->changeValAndReturnByRef(3);
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(VariousFeatures_ChangeValByRef_StaticMethod_0)
+		{
+			//arrange
+			int outVal = 3;
+			int initVal = 0;
+			int expVal = 3;
+
+			//act
+			VariousFeatures::changeValAndReturnByRef(outVal, initVal);
+
+			//assert
+			Assert::AreEqual(expVal, initVal);
+		}
+
+		TEST_METHOD(VariousFeatures_ChangeValByPointer_StaticMethod_0)
+		{
+			//arrange
+			int outVal = 3;
+			int* initVal = new int(0);
+			int expVal = 3;
+
+			//act
+			VariousFeatures::changeValAndReturnWithPointer(outVal, initVal);
+
+			//assert
+			Assert::AreEqual(expVal, *initVal);
 		}
 	};
 }
