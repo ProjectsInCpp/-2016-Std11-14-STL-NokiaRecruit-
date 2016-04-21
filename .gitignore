@@ -1,1 +1,7 @@
 *.opendb
+*.idb
+*.pdb
+*.cache
+*.tlog
+*.sdf
+*.suo
