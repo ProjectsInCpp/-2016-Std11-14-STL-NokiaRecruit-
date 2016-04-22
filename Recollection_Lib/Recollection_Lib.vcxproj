@@ -137,6 +137,7 @@
     <ClInclude Include="Inheritance\ProtectedInheritance.h" />
     <ClInclude Include="Inheritance\MultiInheritance.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Mammal.h" />
+    <ClInclude Include="Inheritance\Utils.h" />
     <ClInclude Include="SomeClass.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="stdafx.h" />

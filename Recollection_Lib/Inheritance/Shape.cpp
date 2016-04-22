@@ -3,11 +3,17 @@
 
 CShape::CShape()
 {
+	cout << "CShape CTOR" << endl;
 }
 
+CShape::CShape(int aVal)
+{
+	cout << "CShape CTOR" << endl;
+}
 
 CShape::~CShape()
 {
+	cout << "CShape DTOR" << endl;
 }
 
 int CShape::GetBrush()

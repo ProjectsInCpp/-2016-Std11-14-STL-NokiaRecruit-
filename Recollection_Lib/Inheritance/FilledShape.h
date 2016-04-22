@@ -3,6 +3,8 @@
 #ifndef FilledShape_h
 #define FilledShape_h
 
+#include "Utils.h"
+
 class CFilledShape
 {
 private:

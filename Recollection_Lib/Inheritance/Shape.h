@@ -3,6 +3,8 @@
 #ifndef Shape_h
 #define Shape_h
 
+#include "Utils.h"
+
 class CShape
 {
 private:
@@ -15,6 +17,7 @@ public:
 	int GetBrush();
 	int GetVertices();
 	CShape();
+	CShape(int aVal);
 	~CShape();
 };
 

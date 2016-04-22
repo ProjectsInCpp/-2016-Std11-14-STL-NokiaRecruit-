@@ -3,9 +3,11 @@
 
 CFilledShape::CFilledShape()
 {
+	cout << "CFilledShape CTOR" << endl;
 }
 
 
 CFilledShape::~CFilledShape()
 {
+	cout << "CFilledShape DTOR" << endl;
 }
