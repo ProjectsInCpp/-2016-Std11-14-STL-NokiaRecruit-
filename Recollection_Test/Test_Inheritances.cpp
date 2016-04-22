@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "VariousFeatures.h"
-#include "Shape.h"
-#include "PublicInheritance.h"
-#include "PrivateInheritance.h"
+#include "Inheritance\Shape.h"
+#include "Inheritance\PublicInheritance.h"
+#include "Inheritance\PrivateInheritance.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
