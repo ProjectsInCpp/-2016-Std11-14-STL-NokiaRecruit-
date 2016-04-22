@@ -1,2 +1,17 @@
-﻿  MultiInheritance.cpp
+﻿  stdafx.cpp
+  WingedAnimal.cpp
+  VariousFeatures.cpp
+  SomeClass.cpp
+  Mammal.cpp
+  MultiInheritance.cpp
+  Shape.cpp
+  PublicInheritance.cpp
+  ProtectedInheritance.cpp
+  PrivateInheritance.cpp
+  InheritFromProtectedInheritance.cpp
+  InheritFromPrivateInheritance.cpp
+  FilledShape.cpp
+  Animal.cpp
+  Bat.cpp
+  Generating Code...
   Recollection_Lib.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Lib.lib

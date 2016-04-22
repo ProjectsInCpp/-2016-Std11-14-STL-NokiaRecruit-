@@ -57,6 +57,18 @@
     <ClInclude Include="Inheritance\MultiInheritance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Inheritance\Multiple_Virtual\Animal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inheritance\Multiple_Virtual\Mammal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inheritance\Multiple_Virtual\WingedAnimal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inheritance\Multiple_Virtual\Bat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -83,13 +95,25 @@
     <ClCompile Include="Inheritance\Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Inheritance\ProtectedInheritance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Inheritance\FilledShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Inheritance\MultiInheritance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual\Animal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual\Mammal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual\WingedAnimal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\ProtectedInheritance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual\Bat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
