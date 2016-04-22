@@ -4,6 +4,7 @@
 
 CMammal::CMammal()
 {
+	cout << "CMammal CTOR" << endl;
 }
 
 void CMammal::breathe()
@@ -13,4 +14,5 @@ void CMammal::breathe()
 
 CMammal::~CMammal()
 {
+	cout << "CMammal DTOR" << endl;
 }

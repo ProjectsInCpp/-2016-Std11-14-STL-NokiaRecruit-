@@ -4,9 +4,11 @@
 
 CPublicInheritance::CPublicInheritance() : CShape()
 {
+	cout << "CPublicInheritance CTOR" << endl;
 }
 
 
 CPublicInheritance::~CPublicInheritance()
 {
+	cout << "CPublicInheritance DTOR" << endl;
 }

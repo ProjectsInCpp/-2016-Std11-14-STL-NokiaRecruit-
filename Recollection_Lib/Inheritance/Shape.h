@@ -3,7 +3,7 @@
 #ifndef Shape_h
 #define Shape_h
 
-#include "Utils.h"
+#include "Multiple_Virtual\Utils.h"
 
 class CShape
 {

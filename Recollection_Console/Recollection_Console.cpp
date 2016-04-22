@@ -5,24 +5,49 @@
 #include <iostream>
 #include "Inheritance\Shape.h"
 #include "Inheritance\FilledShape.h"
+#include "Inheritance\PublicInheritance.h"
+#include "Inheritance\MultiInheritance.h"
+#include "Inheritance\Multiple_Virtual\Bat.h"
 
 using namespace std;
+
+void CreateCShapeObj()
+{
+	CShape obj;
+}
 
 void CreateCFilledShapeObj()
 {
 	CFilledShape obj;
 }
 
-void CreateShapeObj()
+void CreatePublicInheritanceObj()
 {
-	CShape obj;
+	CPublicInheritance obj;
+}
+
+void CreateCMultiInheritanceObj()
+{
+	CMultiInheritance obj;
+}
+
+void CreateCBatObj()
+{
+	CBat obj;
 }
 
 void main()
 {
 	cout << "Hello World" << endl;
-	CreateShapeObj();
+	CreateCShapeObj();
 	cout << endl;
 	CreateCFilledShapeObj();
+	cout << endl;
+	CreatePublicInheritanceObj();
+	cout << endl;
+	CreateCMultiInheritanceObj();
+	cout << endl;
+	CreateCBatObj();
+	cout << endl;
 	system("Pause");
 }

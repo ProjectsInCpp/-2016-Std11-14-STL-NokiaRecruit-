@@ -4,9 +4,11 @@
 
 CBat::CBat()
 {
+	cout << "CBat CTOR" << endl;
 }
 
 
 CBat::~CBat()
 {
+	cout << "CBat DTOR" << endl;
 }

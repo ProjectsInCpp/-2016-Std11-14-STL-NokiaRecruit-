@@ -1,12 +1,8 @@
-﻿  Shape.cpp
+﻿  Animal.cpp
   Generating Code...
   Compiling...
-  PublicInheritance.cpp
-  ProtectedInheritance.cpp
-  PrivateInheritance.cpp
-  MultiInheritance.cpp
+  WingedAnimal.cpp
+  Mammal.cpp
+  Bat.cpp
   Generating Code...
-  Skipping... (no relevant changes detected)
-  InheritFromProtectedInheritance.cpp
-  InheritFromPrivateInheritance.cpp
   Recollection_Lib.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Lib.lib

@@ -57,19 +57,19 @@
     <ClInclude Include="Inheritance\MultiInheritance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inheritance\Multiple_Virtual\Animal.h">
+    <ClInclude Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inheritance\Multiple_Virtual\Mammal.h">
+    <ClInclude Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Bat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inheritance\Multiple_Virtual\WingedAnimal.h">
+    <ClInclude Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Mammal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inheritance\Multiple_Virtual\Bat.h">
+    <ClInclude Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inheritance\Utils.h">
+    <ClInclude Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\WingedAnimal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -104,19 +104,19 @@
     <ClCompile Include="Inheritance\MultiInheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Inheritance\Multiple_Virtual\Animal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Inheritance\Multiple_Virtual\Mammal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Inheritance\Multiple_Virtual\WingedAnimal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Inheritance\ProtectedInheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Inheritance\Multiple_Virtual\Bat.cpp">
+    <ClCompile Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Animal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Bat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\Mammal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance\Multiple_Virtual_With_Virtual_DTOR\WingedAnimal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

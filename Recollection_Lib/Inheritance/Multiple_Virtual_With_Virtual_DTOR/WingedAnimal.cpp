@@ -4,6 +4,7 @@
 
 CWingedAnimal::CWingedAnimal()
 {
+	cout << "CWingedAnimal CTOR" << endl;
 }
 
 void CWingedAnimal::flap()
@@ -13,4 +14,5 @@ void CWingedAnimal::flap()
 
 CWingedAnimal::~CWingedAnimal()
 {
+	cout << "CWingedAnimal DTOR" << endl;
 }

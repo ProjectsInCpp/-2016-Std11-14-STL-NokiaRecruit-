@@ -4,6 +4,7 @@
 
 CAnimal::CAnimal()
 {
+	cout << "CAnimal CTOR" << endl;
 }
 
 void CAnimal::eat()
@@ -13,4 +14,5 @@ void CAnimal::eat()
 
 CAnimal::~CAnimal()
 {
+	cout << "CAnimal DTOR" << endl;
 }
