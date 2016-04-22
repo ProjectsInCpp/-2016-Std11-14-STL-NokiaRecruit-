@@ -36,6 +36,12 @@ void CreateCBatObj()
 	CBat obj;
 }
 
+void CreateCBatObjAndPointToItByCAnimal()
+{
+	CAnimal* obj = new CBat();
+	delete obj;
+}// to test how virtual DTORS work, go to this class hierarchy and uncomment virtual keywords
+
 void main()
 {
 	cout << "Hello World" << endl;
@@ -48,6 +54,8 @@ void main()
 	CreateCMultiInheritanceObj();
 	cout << endl;
 	CreateCBatObj();
+	cout << endl;
+	CreateCBatObjAndPointToItByCAnimal();
 	cout << endl;
 	system("Pause");
 }

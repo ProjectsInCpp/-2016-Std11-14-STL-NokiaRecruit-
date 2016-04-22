@@ -6,8 +6,10 @@ class CWingedAnimal :
 	public virtual CAnimal
 {
 public:
-	virtual void flap();
+	//virtual 
+		void flap();
 	CWingedAnimal();
-	virtual ~CWingedAnimal();
+	virtual 
+		~CWingedAnimal();
 };
 
