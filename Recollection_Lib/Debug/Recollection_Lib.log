@@ -1,8 +1,7 @@
-﻿  Animal.cpp
+﻿  Mammal.cpp
+  Animal.cpp
   Generating Code...
-  Compiling...
+  Skipping... (no relevant changes detected)
   WingedAnimal.cpp
-  Mammal.cpp
   Bat.cpp
-  Generating Code...
   Recollection_Lib.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Lib.lib

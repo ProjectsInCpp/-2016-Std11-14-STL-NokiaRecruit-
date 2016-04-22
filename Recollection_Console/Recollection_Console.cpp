@@ -10,52 +10,213 @@
 #include "Inheritance\Multiple_Virtual\Bat.h"
 
 using namespace std;
+//
+#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
 
-void CreateCShapeObj()
+//void CreateCShapeObj()
+//{
+//	CShape obj;
+//}
+//
+//void CreateCFilledShapeObj()
+//{
+//	CFilledShape obj;
+//}
+//
+//void CreatePublicInheritanceObj()
+//{
+//	CPublicInheritance obj;
+//}
+//
+//void CreateCMultiInheritanceObj()
+//{
+//	CMultiInheritance obj;
+//}
+//
+//void CreateCBatObj()
+//{
+//	CBat obj;
+//}
+//
+//void CreateCBatObjAndPointToItByCAnimal()
+//{
+//	CAnimal* obj = new CBat();
+//	delete obj;
+//}// to test how virtual DTORS work, go to this class hierarchy and uncomment virtual keywords
+
+#pragma endregion
+//void CreateObjectCAnimalAndYell()
+//{
+//	cout << "******************CAnimal Static Obj "<<endl;
+//	CAnimal obj;
+//	obj.yell();
+//}
+//
+//void CreateObjectCMammalAndYell()
+//{
+//	cout << "******************CMammal Static Obj " << endl;
+//	CMammal obj;
+//	obj.yell();
+//}
+
+void CreateObjectCMammalTieToToCAnimalAndYell()
 {
-	CShape obj;
+	CMammal obj;
+	CAnimal obj2 = obj;
+	obj.yell();
 }
 
-void CreateCFilledShapeObj()
+void CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell()
 {
-	CFilledShape obj;
+	CMammal obj;
+	CAnimal obj2 = obj;
+	((CAnimal)obj).yell();
 }
 
-void CreatePublicInheritanceObj()
+void TestingPolymorphicYellOnMammalAndAnimal_Static()
 {
-	CPublicInheritance obj;
+	CMammal* mammal = new CMammal();
+	CAnimal* animal = new CAnimal();
+
+	CAnimal* polymorph = animal;
+	polymorph->yell();
+
+	polymorph = mammal;
+	polymorph->yell();
+
+	delete mammal;
+	delete animal;
 }
 
-void CreateCMultiInheritanceObj()
+void TestingPolymorphicYell_Dynamic()
 {
-	CMultiInheritance obj;
+	cout << "Polymorphic Yell Dynamic";
+	CMammal* mammal = new CMammal();
+	CAnimal* animal = new CAnimal();
+
+	CAnimal* polymorph = animal;
+	polymorph->yell();
+
+	polymorph = mammal;
+	polymorph->yell();
+
+	delete mammal;
+	delete animal;
 }
 
-void CreateCBatObj()
+void TestingMonomorphicTell_Dynamic()
 {
-	CBat obj;
+	cout << "Monomorphic Tell Dynamic";
+	CMammal* mammal = new CMammal();
+	CAnimal* animal = new CAnimal();
+
+	CAnimal* polymorph = animal;
+	polymorph->tell();
+
+	polymorph = mammal;
+	polymorph->tell();
+
+	delete mammal;
+	delete animal;
 }
 
-void CreateCBatObjAndPointToItByCAnimal()
+void TestingMonomorphicTell_Casting_Dynamic()
 {
-	CAnimal* obj = new CBat();
-	delete obj;
-}// to test how virtual DTORS work, go to this class hierarchy and uncomment virtual keywords
+	cout << "Monomorphic Tell Dynamic";
+	CMammal* mammal = new CMammal();
+	CAnimal* animal = new CAnimal();
+
+	CAnimal* polymorph = animal;
+	polymorph->tell();
+
+	polymorph = mammal;
+	polymorph->tell();
+
+	delete mammal;
+	delete animal;
+}
+
+void TestingPolymorphicYell_Static()
+{
+	cout << "Polymorphic Yell Static";
+	CMammal mammal;
+	CAnimal animal;
+
+	CAnimal& polymorph = mammal;
+	polymorph.yell();
+
+	polymorph = animal;
+	polymorph.yell();
+}
+
+void TestingPolymorphicYell_Static_ByRef()
+{
+	cout << "Polymorphic Yell Static By Ref "<<endl;
+	CMammal mammal;
+	CAnimal animal;
+
+	CAnimal& polymorph = mammal;
+	polymorph.yell();
+
+	CAnimal& polymorph2 = animal;
+	polymorph = polymorph2;
+	polymorph.yell();
+}
+
+void TestingMonomorphicTell_Static()
+{
+	cout << "Monomorphic Yell Static";
+	CMammal mammal;
+	CAnimal animal;
+
+	CAnimal& polymorph = mammal;
+	polymorph.tell();
+
+	polymorph = animal;
+	polymorph.tell();
+}
 
 void main()
 {
-	cout << "Hello World" << endl;
-	CreateCShapeObj();
+#pragma region ************** TESTING SIMPLE CTORS ************************
+//	cout << "Hello World" << endl;
+//	CreateCShapeObj();
+//	cout << endl;
+//	CreateCFilledShapeObj();
+//	cout << endl;
+//#pragma endregion
+//#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
+//	CreatePublicInheritanceObj();
+//	cout << endl;
+//	CreateCMultiInheritanceObj();
+//	cout << endl;
+//	CreateCBatObj();
+//	cout << endl;
+//
+//	CreateCBatObjAndPointToItByCAnimal();
+//	cout << endl;
+#pragma endregion
+
+	//CreateObjectCAnimalAndYell();
+	//cout << endl;
+	//CreateObjectCMammalAndYell();
+	//cout << endl;
+	//CreateObjectCMammalTieToToCAnimalAndYell();
+	//cout << endl;
+	//CreateObjectCMammalTieToToCAnimalAndYell();
+	//cout << endl;
+	//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
+	//cout << endl;
+	TestingPolymorphicYell_Dynamic();
 	cout << endl;
-	CreateCFilledShapeObj();
+	TestingMonomorphicTell_Dynamic();
 	cout << endl;
-	CreatePublicInheritanceObj();
+	TestingPolymorphicYell_Static();
 	cout << endl;
-	CreateCMultiInheritanceObj();
+	TestingMonomorphicTell_Static();
 	cout << endl;
-	CreateCBatObj();
+	TestingPolymorphicYell_Static_ByRef();
 	cout << endl;
-	CreateCBatObjAndPointToItByCAnimal();
-	cout << endl;
+
 	system("Pause");
 }

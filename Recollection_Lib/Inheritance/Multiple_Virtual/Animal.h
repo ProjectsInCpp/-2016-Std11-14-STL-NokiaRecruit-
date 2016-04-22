@@ -7,6 +7,8 @@ class CAnimal
 public:
 	//virtual 
 		void eat();
+	virtual void yell();
+	void tell();
 
 	CAnimal();
 	virtual 
