@@ -5,6 +5,6 @@ class CPrivateInheritance :
 {
 public:
 	CPrivateInheritance();
-	~CPrivateInheritance(); 
+	~CPrivateInheritance();  
 };
 
