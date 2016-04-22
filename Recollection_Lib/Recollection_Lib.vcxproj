@@ -126,6 +126,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PrivateInheritance.h" />
+    <ClInclude Include="PublicInheritance.h" />
+    <ClInclude Include="Shape.h" />
     <ClInclude Include="SomeClass.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="stdafx.h" />
@@ -133,6 +136,9 @@
     <ClInclude Include="VariousFeatures.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="PrivateInheritance.cpp" />
+    <ClCompile Include="PublicInheritance.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="SomeClass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

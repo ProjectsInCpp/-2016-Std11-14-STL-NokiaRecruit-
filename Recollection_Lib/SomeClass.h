@@ -1,4 +1,7 @@
 #pragma once
+#ifndef SomeClass_h
+#define SomeClass_h
+
 #include "VariousFeatures.h"
 
 class SomeClass
@@ -8,4 +11,6 @@ public:
 	int showValFromVariousFeaturePrivateMethod(VariousFeatures& aInput);
 	friend int friendlyMethodGetVal(VariousFeatures* aInVal);
 };
+
+#endif
 

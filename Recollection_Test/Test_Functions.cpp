@@ -7,7 +7,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Recollection_Test
 {
-	TEST_CLASS(Functions)
+	TEST_CLASS(Test_Functions)
 	{
 	public:
 

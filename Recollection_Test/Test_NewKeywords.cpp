@@ -7,7 +7,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Recollection_Test
 {
-	TEST_CLASS(NewKeywords)
+	TEST_CLASS(Test_NewKeywords)
 	{
 	public:
 

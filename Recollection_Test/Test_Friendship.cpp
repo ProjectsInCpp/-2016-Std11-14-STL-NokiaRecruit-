@@ -8,7 +8,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Recollection_Test
 {
-	TEST_CLASS(FriendShip)
+	TEST_CLASS(Test_FriendShip)
 	{
 	public:
 

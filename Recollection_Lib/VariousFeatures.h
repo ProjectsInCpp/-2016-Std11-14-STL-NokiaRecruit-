@@ -1,4 +1,7 @@
 #pragma once
+#ifndef VariousFeatures_h
+#define VariousFeatures_h
+
 #include <vector>
 using namespace std;
 
@@ -24,4 +27,6 @@ public:
 	static void changeValAndReturnWithPointer(int outVal, int* initVal);
 	int GetVal();
 };
+
+#endif
 

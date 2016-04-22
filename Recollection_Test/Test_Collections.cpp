@@ -10,7 +10,7 @@ using namespace std;
 
 namespace Recollection_Test
 {
-	TEST_CLASS(Collections)
+	TEST_CLASS(Test_Collections)
 	{
 	public:
 
