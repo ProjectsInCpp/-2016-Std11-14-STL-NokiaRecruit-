@@ -10,3 +10,8 @@ CPrivateInheritance::CPrivateInheritance()
 CPrivateInheritance::~CPrivateInheritance()
 {
 }
+
+int CPrivateInheritance::GetPublicVertices()
+{
+	return this->vertices;
+}

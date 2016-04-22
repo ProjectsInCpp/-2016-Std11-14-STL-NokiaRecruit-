@@ -10,8 +10,3 @@ CPublicInheritance::CPublicInheritance() : CShape()
 CPublicInheritance::~CPublicInheritance()
 {
 }
-
-int CPublicInheritance::GetPublicVerticesFromFather()
-{
-	return this->vertices;
-}

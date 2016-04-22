@@ -8,7 +8,6 @@ class CPublicInheritance : public CShape
 public:
 	CPublicInheritance();
 	~CPublicInheritance();
-	int GetPublicVerticesFromFather();
 };
 
 #endif

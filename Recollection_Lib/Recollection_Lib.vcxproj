@@ -126,7 +126,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InheritFromPrivateInheritance.h" />
+    <ClInclude Include="InheritFromProtectedInheritance.h" />
     <ClInclude Include="PrivateInheritance.h" />
+    <ClInclude Include="ProtectedInheritance.h" />
     <ClInclude Include="PublicInheritance.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="SomeClass.h" />
@@ -136,7 +139,10 @@
     <ClInclude Include="VariousFeatures.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="InheritFromPrivateInheritance.cpp" />
+    <ClCompile Include="InheritFromProtectedInheritance.cpp" />
     <ClCompile Include="PrivateInheritance.cpp" />
+    <ClCompile Include="ProtectedInheritance.cpp" />
     <ClCompile Include="PublicInheritance.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="SomeClass.cpp" />
