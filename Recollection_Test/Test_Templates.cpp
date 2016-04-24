@@ -34,7 +34,7 @@ namespace Recollection_Test
 			int expVal = 1;
 			int rcVal = -1;
 			int inVal = 1;
-			CPackageTypeInline<int>* obj = new CPackageTypeInline<int>();
+			auto obj = new CPackageTypeInline<int>();
 
 			//act
 			obj->SetPtr(inVal);
@@ -51,7 +51,7 @@ namespace Recollection_Test
 			int expVal = 0;
 			int rcVal = -1;
 			int inVal = 1;
-			CPackageTypeInline<int>* obj = new CPackageTypeInline<int>();
+			auto obj = new CPackageTypeInline<int>();
 
 			//act
 			rcVal = obj->GetPtr();

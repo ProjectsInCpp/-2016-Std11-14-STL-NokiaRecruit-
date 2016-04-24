@@ -272,7 +272,7 @@ namespace Recollection_Test
 		TEST_METHOD(Object_InitializingList_InitStaticVal_GetCounterWithPointer_True)
 		{
 			//arrange
-			VariousFeatures* obj1 = new VariousFeatures{ 1, 2 };
+			auto obj1 = new VariousFeatures{ 1, 2 };
 			int expVal = 0;
 			int rcVal = -1;
 
@@ -286,7 +286,7 @@ namespace Recollection_Test
 		TEST_METHOD(Pointer_CTOR_VectorWith_Braces)
 		{
 			//arrange
-			vector<int>* obj = new vector<int>{ 0,1,2,3,4 };
+			auto obj = new vector<int>{ 0,1,2,3,4 };
 			vector<int> expVal{ 0, 1, 2, 3, 4 };
 			int i = 0;
 
