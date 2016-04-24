@@ -4,7 +4,6 @@
 #include "SomeClass.h"
 #include "Utils.h"
 #include "Templates\PackageTypeInline.h"
-#include "Templates\PackageType.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -46,34 +45,16 @@ namespace Recollection_Test
 			delete obj;
 		}
 
-
-		//TEST_METHOD(CPackageType_Ptr_CTOR_Getter_1)
-		//{
-		//	//arrange
-		//	int expVal = 1;
-		//	int rcVal = -1;
-		//	int inVal = 1;
-		//	CPackageType<int>* obj = new CPackageType<int>(inVal);
-
-		//	//act
-		//	rcVal = obj->GetPtr();
-
-		//	//assert
-		//	Assert::AreEqual(expVal, rcVal);
-		//	delete obj;
-		//}
-
-		TEST_METHOD(CPackageType_Ptr_Setter_Getter_1)
+		TEST_METHOD(CPackageTypeInline_Ptr_CTOR_Getter_0)
 		{
 			//arrange
-			int expVal = 1;
+			int expVal = 0;
 			int rcVal = -1;
 			int inVal = 1;
-			CPackageType<int>* obj = new CPackageType<int>();
+			CPackageTypeInline<int>* obj = new CPackageTypeInline<int>();
 
 			//act
-			//obj->SetPtr(inVal);
-			//rcVal = obj->GetPtr();
+			rcVal = obj->GetPtr();
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);

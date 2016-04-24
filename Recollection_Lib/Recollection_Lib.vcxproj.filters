@@ -75,9 +75,6 @@
     <ClInclude Include="Templates\PackageTypeInline.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Templates\PackageType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -126,9 +123,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Templates\PackageTypeInline.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Templates\PackageType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

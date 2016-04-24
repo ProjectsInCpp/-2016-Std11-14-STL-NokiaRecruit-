@@ -60,5 +60,101 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, inVal);
 			Assert::AreEqual(expVal, *refToVal);
 		}
+
+		TEST_METHOD(Pointer_DefaultValue_Int_0)
+		{
+			//arrange
+			int *obj = new int{};
+			int expVal = 0;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Pointer_CTOR_With_Braces_Int_1)
+		{
+			//arrange
+			int *obj = new int{1};
+			int expVal = 1;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Object_CTOR_With_Braces_Int_1)
+		{
+			//arrange
+			int obj{ 1 };
+			int expVal = 1;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, obj);
+		}
+
+		TEST_METHOD(Pointer_CTOR_With_Braces_Int_2)
+		{
+			//arrange
+			int* obj{ new int(2) };
+			int expVal = 2;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Pointer_DefaultValue_Float_0)
+		{
+			//arrange
+			float *obj = new float{};
+			float expVal = 0.0;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Pointer_DefaultValue_Double_0)
+		{
+			//arrange
+			double *obj = new double{};
+			double expVal = 0.0;
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Pointer_DefaultValue_String_Empty)
+		{
+			//arrange
+			string *obj = new string{};
+			string expVal = "";
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
+
+		TEST_METHOD(Pointer_DefaultValue_Char_Empty)
+		{
+			//arrange
+			char *obj = new char{};
+			char expVal = '\0';
+
+			//act
+
+			//assert
+			Assert::AreEqual(expVal, *obj);
+		}
 	};
 }

@@ -6,7 +6,16 @@ private:
 	T mVal;
 	T* mPtr = nullptr;
 public:
-	//CPackageType(T aVal);
+	CPackageTypeInline()
+	{
+		this->mVal = 0;
+		this->mPtr = new T();
+	}
+	CPackageTypeInline(const T& aVal)
+	{
+		this->mVal = aVal;
+		this->mPtr = nullptr;
+	}
 	~CPackageTypeInline()
 	{
 		delete mPtr;
