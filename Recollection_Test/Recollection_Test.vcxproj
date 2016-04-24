@@ -172,6 +172,7 @@
     </ClCompile>
     <ClCompile Include="Test_CTORS.cpp" />
     <ClCompile Include="Test_Pointers.cpp" />
+    <ClCompile Include="Test_Templates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Recollection_Lib\Recollection_Lib.vcxproj">

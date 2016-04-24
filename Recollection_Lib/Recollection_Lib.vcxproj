@@ -138,6 +138,8 @@
     <ClInclude Include="Inheritance\MultiInheritance.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Mammal.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Utils.h" />
+    <ClInclude Include="Templates\PackageType.h" />
+    <ClInclude Include="Templates\PackageTypeInline.h" />
     <ClInclude Include="SomeClass.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="stdafx.h" />
@@ -157,6 +159,8 @@
     <ClCompile Include="Inheritance\Shape.cpp" />
     <ClCompile Include="Inheritance\MultiInheritance.cpp" />
     <ClCompile Include="Inheritance\Multiple_Virtual\Mammal.cpp" />
+    <ClCompile Include="Templates\PackageType.cpp" />
+    <ClCompile Include="Templates\PackageTypeInline.cpp" />
     <ClCompile Include="SomeClass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
