@@ -1,4 +1,7 @@
 #pragma once
+#ifndef Utils_h
+#define Utils_h
+
 #include <string>
 using namespace std;
 
@@ -15,4 +18,6 @@ namespace Utils {
 		GREEN,
 		RED
 	};
-}
+};
+
+#endif

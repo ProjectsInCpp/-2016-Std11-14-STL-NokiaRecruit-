@@ -163,6 +163,11 @@ void TestingPolymorphicYell_Static_ByRef()
 	polymorph.yell();
 }
 
+int dodaj(int a, int b)
+{
+	return a + b;
+}
+
 void TestingMonomorphicTell_Static()
 {
 	cout << "Monomorphic Yell Static";
@@ -207,6 +212,7 @@ void main()
 	//cout << endl;
 	//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
 	//cout << endl;
+	/*
 	TestingPolymorphicYell_Dynamic();
 	cout << endl;
 	TestingMonomorphicTell_Dynamic();
@@ -216,7 +222,13 @@ void main()
 	TestingMonomorphicTell_Static();
 	cout << endl;
 	TestingPolymorphicYell_Static_ByRef();
-	cout << endl;
+	cout << endl;*/
+
+	int(*fun)(int, int) = dodaj;
+
+	//act
+	int retVal = (*fun)(2, 3);
+	cout << retVal;
 
 	system("Pause");
 }

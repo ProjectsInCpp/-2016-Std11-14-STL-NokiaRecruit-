@@ -71,4 +71,3 @@ int VariousFeatures::changeValAndReturnByRef(int aVal) const
 {
 	return this->val;
 }
-

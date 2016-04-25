@@ -34,7 +34,6 @@ public:
 	static void changeValAndReturnByRef(int outVal, int& initVal);
 	static void changeValAndReturnWithPointer(int outVal, int* initVal);
 
-
 	friend int friendlyMethodGetVal(VariousFeatures* aInVal);
 };
 

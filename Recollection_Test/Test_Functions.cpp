@@ -4,6 +4,7 @@
 #include "Utils.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Utils;
 
 namespace Recollection_Test
 {
@@ -66,5 +67,17 @@ namespace Recollection_Test
 			//assert
 			Assert::AreEqual(expVal, *initVal);
 		}
+
+		TEST_METHOD(VariousFeatures_Functional_Add3_5)
+		{
+			//arrange
+			int expVal = 5;
+
+
+			//assert
+			Assert::AreEqual(expVal, retVal);
+		}
+
+
 	};
 }
