@@ -201,7 +201,7 @@ namespace Recollection_Test
 			Assert::IsTrue(resVal);
 		}
 
-		TEST_METHOD(Map_Auto_Auto_InitializerList_True)
+		TEST_METHOD(Map_Int_String_Insert_InitializerList_True)
 		{
 			//arrange
 			map<int, string> inTape
@@ -213,17 +213,48 @@ namespace Recollection_Test
 				{ 5,"piec" }
 			};
 
-			vint expTape = { 1 ,2 ,3 ,4 ,5 };
+			vint expTape = { 1 ,2 ,3 ,4 ,5,6 };
 			bool resVal = true;
 			int i = 0;
-			//inTape.empty()
 
 			//act
+			inTape.insert({ 6, "szesc" });
 			for (auto it : inTape)
 				resVal = it.first == expTape[i++];
 
 			//assert
 			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(Map_Int_String_InsertDuplicate_Find_1_InitializerList_TwoValuesInKey_True)
+		{
+			//arrange
+			map<int, string> inTape
+			{
+				{ 1,"jeden" },
+				{ 2,"dwa" },
+				{ 3,"trzy" },
+				{ 4,"cztery" },
+				{ 5,"piec" }
+			};
+			int searchedKey = 5;
+
+			vint expTape = { 1 ,2 ,3 ,4 ,5, 6 };
+			vector<string> rcVal;
+			vector<string> expVal{ "piec"};
+			int i = 0;
+			bool endVal{ true };
+
+			//act
+			auto elem = inTape.find(searchedKey);
+			while (elem != inTape.end())
+				rcVal.push_back((*elem++).second);
+			
+			//assert
+			for (auto it = rcVal.cbegin(); it < rcVal.cend(); it++)
+				endVal &= *it == expVal[i++];
+				
+			Assert::IsTrue(endVal);
 		}
 	};
 }

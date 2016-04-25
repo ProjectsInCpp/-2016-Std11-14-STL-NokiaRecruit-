@@ -11,11 +11,7 @@ VariousFeatures::VariousFeatures(initializer_list<int> aTape)
 {
 	VariousFeatures();
 	this->tape = aTape;
-	//for (auto it : aTape)
-	//	this->tape.push_back(it);
 }
-
-
 
 VariousFeatures::VariousFeatures(int aVal):val(aVal){
 }
