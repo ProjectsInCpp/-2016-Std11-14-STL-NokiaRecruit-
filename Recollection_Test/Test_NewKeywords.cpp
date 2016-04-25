@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "VariousFeatures.h"
 #include "Utils.h"
+#include <iso646.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -42,6 +43,35 @@ namespace Recollection_Test
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);
+		}
+
+		TEST_METHOD(Bools_Not_true)
+		{
+			//arrange
+			bool inVal1 = false;
+			bool rcVal = false;
+			bool expVal = true;
+
+			//act
+			rcVal = not inVal1;
+
+			//assert
+			Assert::IsTrue(rcVal);
+		}
+
+		TEST_METHOD(Integers_NotEqual_true)
+		{
+			//arrange
+			int inVal1 = 0;
+			int inVal2 = 1;
+			int rcVal = false;
+			bool expVal = true;
+
+			//act
+			rcVal = inVal1 not_eq inVal2;
+
+			//assert
+			Assert::IsTrue(rcVal);
 		}
 	};
 }

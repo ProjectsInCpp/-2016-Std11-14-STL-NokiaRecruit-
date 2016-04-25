@@ -163,6 +163,8 @@
     <ClCompile Include="Test_Inheritances.cpp" />
     <ClCompile Include="Test_Friendship.cpp" />
     <ClCompile Include="Test_Functions.cpp" />
+    <ClCompile Include="Test_Iterators.cpp" />
+    <ClCompile Include="Test_Lambdas.cpp" />
     <ClCompile Include="Test_NewKeywords.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

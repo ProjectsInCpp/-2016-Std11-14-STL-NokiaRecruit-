@@ -6,6 +6,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
+using namespace Utils;
 
 
 namespace Recollection_Test
@@ -157,6 +158,22 @@ namespace Recollection_Test
 
 			//assert
 			Assert::AreEqual(expSize, (int)tape.size());
+		}
+
+		TEST_METHOD(Vector_ForEach_True)
+		{
+			//arrange
+			vint tape = { 0 ,1 ,2 ,3 ,4 };
+			vint expTape = { 0 ,1 ,2 ,3 ,4 };
+			bool resVal = true;
+			int i = 0;
+
+			//act
+			for (auto it : tape)
+				resVal = it == expTape[i++];
+
+			//assert
+			Assert::IsTrue(resVal);
 		}
 	};
 }

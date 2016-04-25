@@ -14,7 +14,12 @@ public:
 	CPackageTypeInline(const T& aVal)
 	{
 		this->mVal = aVal;
-		this->mPtr = nullptr;
+		this->mPtr = new T();
+	}
+	CPackageTypeInline(const CPackageTypeInline& aVal)
+	{
+		this->mVal = aVal.mVal;
+		this->mPtr = new T(*aVal.mPtr);
 	}
 	~CPackageTypeInline()
 	{
@@ -28,7 +33,22 @@ public:
 	{
 		return mVal;
 	}
-
+	CPackageTypeInline& CopyValue(CPackageTypeInline aVal)
+	{
+		return *(new CPackageTypeInline<T>(aVal));
+	}
+	CPackageTypeInline& CopyValueRef(CPackageTypeInline& aVal)
+	{
+		return *(new CPackageTypeInline<T>(aVal));
+	}
+	CPackageTypeInline& CopyValueRef2(CPackageTypeInline& aVal)
+	{
+		return aVal;
+	}
+	CPackageTypeInline* CopyValue(CPackageTypeInline* aVal)
+	{
+		return new CPackageTypeInline<T>(*aVal);
+	}
 	void SetPtr(const T& aPtr)
 	{
 		this->mPtr = new T(aPtr);
@@ -36,6 +56,10 @@ public:
 	const T& GetPtr()
 	{
 		return *mPtr;
+	}
+	CPackageTypeInline& operator= (CPackageTypeInline& aVal)
+	{
+		return CPackageTypeInline<T>(aVal);
 	}
 };
 

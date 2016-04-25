@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "VariousFeatures.h"
+#include "Templates\PackageTypeInline.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -295,6 +296,84 @@ namespace Recollection_Test
 			//assert
 			for (auto it : *obj)
 				Assert::AreEqual(expVal[i++], it);
+		}
+
+		TEST_METHOD(Object_CPackageType_CTOR_CopyCTOR_1)
+		{
+			//arrange
+			int inVal = 1;
+			CPackageTypeInline<int> obj{ inVal };
+			int expVal = inVal;
+			
+			//act
+			auto rcVal = obj.CopyValue(obj);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal.GetValue());
+			Assert::IsTrue(true);
+		}
+
+		TEST_METHOD(Ref_CPackageType_CTOR_CopyCTOR_1)
+		{
+			//arrange
+			int inVal = 1;
+			CPackageTypeInline<int> obj{ inVal };
+			int expVal = inVal;
+
+			//act
+			auto rcVal = obj.CopyValueRef(obj);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal.GetValue());
+			Assert::IsTrue(true);
+		}
+
+		TEST_METHOD(Ref2_CPackageType_CTOR_CopyCTOR_1)
+		{
+			//arrange
+			int inVal = 1;
+			CPackageTypeInline<int> obj{ inVal };
+			int expVal = inVal;
+
+			//act
+			CPackageTypeInline<int> rcVal = obj.CopyValueRef2(obj);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal.GetValue());
+			Assert::IsTrue(true);
+		}
+
+		TEST_METHOD(Pointers_CPackageType_CTOR_CopyCTOR_1)
+		{
+			//arrange
+			int inVal = 1;
+			CPackageTypeInline<int>* obj = new CPackageTypeInline<int>{ inVal };
+			int expVal = inVal;
+
+			//act
+			auto rcVal = obj->CopyValue(obj);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal->GetValue());
+			delete rcVal;
+			delete obj;
+			Assert::IsTrue(true);
+		}
+		TEST_METHOD(Objects_CPackageType_EqualOperator_CopyCTOR_1)
+		{
+			//arrange
+			int inVal = 1;
+			int inVal2 = 1;
+			CPackageTypeInline<int> obj{ inVal };
+			CPackageTypeInline<int> obj2{ inVal2 };
+			int expVal = inVal;
+
+			//act
+			obj2 = obj;
+
+			//assert
+			Assert::AreEqual(obj.GetValue(), obj2.GetValue());
+			Assert::IsTrue(true);
 		}
 	};
 }

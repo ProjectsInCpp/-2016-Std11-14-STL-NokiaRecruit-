@@ -7,4 +7,5 @@ namespace Utils {
 	{
 		return 3;
 	}
+	using vint = vector<int>;
 }
