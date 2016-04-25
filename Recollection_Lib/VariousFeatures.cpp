@@ -7,6 +7,16 @@ int VariousFeatures::counter = 0;
 
 VariousFeatures::VariousFeatures():val(0){}
 
+VariousFeatures::VariousFeatures(initializer_list<int> aTape)
+{
+	VariousFeatures();
+	this->tape = aTape;
+	//for (auto it : aTape)
+	//	this->tape.push_back(it);
+}
+
+
+
 VariousFeatures::VariousFeatures(int aVal):val(aVal){
 }
 
@@ -39,6 +49,16 @@ const int VariousFeatures::GetID() {
 
 VariousFeatures::~VariousFeatures()
 {
+}
+
+vector<int>::iterator VariousFeatures::GetTapeBegin()
+{
+	return tape.begin();
+}
+
+vector<int>::iterator VariousFeatures::GetTapeEnd()
+{
+	return tape.end();
 }
 
 int VariousFeatures::suma(int fst, int snd) 

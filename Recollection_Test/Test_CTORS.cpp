@@ -229,6 +229,22 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, rcVal);
 		}
 
+		TEST_METHOD(Object_InitializingList_forVector_InCTOR_True)
+		{
+			//arrange
+			VariousFeatures obj1{ { 0,1,2,3 } };
+			vector<int> tapeOut = { 0,1,2,3 };
+			bool result = true;
+			int i = 0;
+
+			//act
+			for (auto it = obj1.GetTapeBegin(); it < obj1.GetTapeEnd(); it++)
+				result &= tapeOut[i++] == *it;
+
+			//assert
+			Assert::IsTrue(result);
+		}
+
 		TEST_METHOD(Object_InitializingList_InitConstVal_GetVal_True)
 		{
 			//arrange

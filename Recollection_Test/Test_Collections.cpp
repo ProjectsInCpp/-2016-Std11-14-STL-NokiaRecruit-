@@ -3,6 +3,7 @@
 #include "VariousFeatures.h"
 #include "Utils.h"
 #include <vector>
+#include <map>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
@@ -171,6 +172,55 @@ namespace Recollection_Test
 			//act
 			for (auto it : tape)
 				resVal = it == expTape[i++];
+
+			//assert
+			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(Map_Int_String_InitializerList_True)
+		{
+			//arrange
+			map<int, string> inTape
+			{
+				{ 1,"jeden"},
+				{ 2,"dwa"  },
+				{ 3,"trzy" },
+				{ 4,"cztery" },
+				{ 5,"piec" }
+			};
+
+			vint expTape = { 1 ,2 ,3 ,4 ,5};
+			bool resVal = true;
+			int i = 0;
+
+			//act
+			for (auto it : inTape)
+				resVal = it.first == expTape[i++];
+
+			//assert
+			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(Map_Auto_Auto_InitializerList_True)
+		{
+			//arrange
+			map<int, string> inTape
+			{
+				{ 1,"jeden" },
+				{ 2,"dwa" },
+				{ 3,"trzy" },
+				{ 4,"cztery" },
+				{ 5,"piec" }
+			};
+
+			vint expTape = { 1 ,2 ,3 ,4 ,5 };
+			bool resVal = true;
+			int i = 0;
+			//inTape.empty()
+
+			//act
+			for (auto it : inTape)
+				resVal = it.first == expTape[i++];
 
 			//assert
 			Assert::IsTrue(resVal);

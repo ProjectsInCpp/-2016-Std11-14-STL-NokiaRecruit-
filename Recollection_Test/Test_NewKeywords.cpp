@@ -5,6 +5,7 @@
 #include <iso646.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Utils;
 
 namespace Recollection_Test
 {
@@ -29,6 +30,53 @@ namespace Recollection_Test
 			Assert::AreEqual(buffArray[0], toAddVal0);
 			Assert::AreEqual(buffArray[1], toAddVal1);
 			Assert::AreEqual(buffArray[2], toAddVal2);
+		}
+
+		TEST_METHOD(EnumClass_Colors_ComparingToInt_True)
+		{
+			//arrange
+			COLORS color = COLORS::BLUE;
+			COLORS expColor = COLORS::BLUE;
+			bool resVal = true;
+
+			//act
+			//resVal &= color == 0;
+			resVal &= color == expColor;
+
+			//assert
+			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(EnumClass_Colors_ComparingToInt_ExplicitParsing_True)
+		{
+			//arrange
+			COLORS color = COLORS::BLUE;
+			COLORS expColor = COLORS::BLUE;
+			bool resVal = true;
+
+			//act
+			resVal &= (int)color == 0;
+			//resVal &= color == expColor;
+
+			//assert
+			Assert::IsTrue(resVal);
+		}
+
+
+		TEST_METHOD(NullPtr_ToPtr_ComparingToInt_True)
+		{
+			//arrange
+			VariousFeatures* inVal = nullptr;
+			VariousFeatures* expVal = nullptr;
+			int zero = 0;
+			bool resVal = true;
+
+			//act
+			//resVal &= nullptr == zero;
+			resVal &= inVal == expVal;
+
+			//assert
+			Assert::IsTrue(resVal);
 		}
 
 		TEST_METHOD(VariousFeatures_ConstVar_GetConstID_True)
