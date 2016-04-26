@@ -11,7 +11,7 @@ public:
 	~ClassWithTemplateMethod()
 	{
 
-	}
+	} 
 	template <typename T>
 	const T& GetGeneric(const T& aVal)
 	{
