@@ -13,6 +13,7 @@ protected:
 	int size = 1;
 public:
 	int vertices = 1;
+	int value = -1;
 
 	int GetBrush();
 	int GetVertices();

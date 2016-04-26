@@ -181,54 +181,90 @@ void TestingMonomorphicTell_Static()
 	polymorph.tell();
 }
 
+//void main()
+//{
+//#pragma region ************** TESTING SIMPLE CTORS ************************
+////	cout << "Hello World" << endl;
+////	CreateCShapeObj();
+////	cout << endl;
+////	CreateCFilledShapeObj();
+////	cout << endl;
+////#pragma endregion
+////#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
+////	CreatePublicInheritanceObj();
+////	cout << endl;
+////	CreateCMultiInheritanceObj();
+////	cout << endl;
+////	CreateCBatObj();
+////	cout << endl;
+////
+////	CreateCBatObjAndPointToItByCAnimal();
+////	cout << endl;
+//#pragma endregion
+//
+//	//CreateObjectCAnimalAndYell();
+//	//cout << endl;
+//	//CreateObjectCMammalAndYell();
+//	//cout << endl;
+//	//CreateObjectCMammalTieToToCAnimalAndYell();
+//	//cout << endl;
+//	//CreateObjectCMammalTieToToCAnimalAndYell();
+//	//cout << endl;
+//	//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
+//	//cout << endl;
+//	/*
+//	TestingPolymorphicYell_Dynamic();
+//	cout << endl;
+//	TestingMonomorphicTell_Dynamic();
+//	cout << endl;
+//	TestingPolymorphicYell_Static();
+//	cout << endl;
+//	TestingMonomorphicTell_Static();
+//	cout << endl;
+//	TestingPolymorphicYell_Static_ByRef();
+//	cout << endl;*/
+// #pragma region ********************* LAMBDAS *****************************
+//	int(*fun)(int, int) = dodaj;
+//
+//	//act
+//	int retVal = (*fun)(2, 3);
+//	cout << retVal;
+// # pragma endregion
+//	system("Pause");
+//}
+
+#include <memory>
+#include "VariousFeatures.h"
+#include "Inheritance\Shape.h"
+
 void main()
 {
-#pragma region ************** TESTING SIMPLE CTORS ************************
-//	cout << "Hello World" << endl;
-//	CreateCShapeObj();
-//	cout << endl;
-//	CreateCFilledShapeObj();
-//	cout << endl;
-//#pragma endregion
-//#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
-//	CreatePublicInheritanceObj();
-//	cout << endl;
-//	CreateCMultiInheritanceObj();
-//	cout << endl;
-//	CreateCBatObj();
-//	cout << endl;
-//
-//	CreateCBatObjAndPointToItByCAnimal();
-//	cout << endl;
-#pragma endregion
+	{
+		cout << endl << "Shared Pointer " << endl;
+		auto* namedPtr = new CShape{ 1 };
+		shared_ptr<CShape> scPtrForNamedPtr{ namedPtr };
+		shared_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+		shared_ptr<CShape> alias = scPtrForUnknowPtr;
 
-	//CreateObjectCAnimalAndYell();
-	//cout << endl;
-	//CreateObjectCMammalAndYell();
-	//cout << endl;
-	//CreateObjectCMammalTieToToCAnimalAndYell();
-	//cout << endl;
-	//CreateObjectCMammalTieToToCAnimalAndYell();
-	//cout << endl;
-	//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
-	//cout << endl;
-	/*
-	TestingPolymorphicYell_Dynamic();
-	cout << endl;
-	TestingMonomorphicTell_Dynamic();
-	cout << endl;
-	TestingPolymorphicYell_Static();
-	cout << endl;
-	TestingMonomorphicTell_Static();
-	cout << endl;
-	TestingPolymorphicYell_Static_ByRef();
-	cout << endl;*/
+		cout << "Alias "<< alias->value << endl;
+		cout << "scPtrForUnknowPtr " << scPtrForUnknowPtr->value << endl;
 
-	int(*fun)(int, int) = dodaj;
+		scPtrForNamedPtr.reset();
+		scPtrForUnknowPtr.reset();
+		alias.reset();
+		cout << " Upper are own dtor Call" << endl;
+	}
+	{
+		cout << endl << "Unique Pointer " << endl;
 
-	//act
-	int retVal = (*fun)(2, 3);
-	cout << retVal;
-
+		CShape* namedPtr = new CShape{ 1 };
+		{
+			unique_ptr<CShape> scPtrForKnowPtr{ namedPtr };
+			unique_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+			unique_ptr<CShape> alias = move(scPtrForUnknowPtr);
+			cout << "Alias " << alias->value << endl;
+		}	
+		cout << "elo" << endl;
+	}
 	system("Pause");
 }

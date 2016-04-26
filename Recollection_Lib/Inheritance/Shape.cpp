@@ -4,11 +4,13 @@
 CShape::CShape()
 {
 	cout << "CShape CTOR" << endl;
+	this->value = 0;
 }
 
 CShape::CShape(int aVal)
 {
 	cout << "CShape CTOR" << endl;
+	this->value = aVal;
 }
 
 CShape::~CShape()
