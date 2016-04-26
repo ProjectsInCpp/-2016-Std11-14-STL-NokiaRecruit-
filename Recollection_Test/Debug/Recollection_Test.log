@@ -8,7 +8,7 @@ c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2899): w
               _InIt2=const int *,
               _Pr=std::equal_to<void>
           ]
-  d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_test\test_collections.cpp(411): note: see reference to function template instantiation 'bool std::equal<std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>,const _Elem*>(_InIt1,_InIt1,_InIt2)' being compiled
+  d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_test\test_collections.cpp(415): note: see reference to function template instantiation 'bool std::equal<std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>,const _Elem*>(_InIt1,_InIt1,_InIt2)' being compiled
           with
           [
               _Elem=int,

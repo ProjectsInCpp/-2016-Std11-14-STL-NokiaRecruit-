@@ -4,6 +4,10 @@
 #include "Utils.h"
 #include <vector>
 #include <map>
+#include <stack>
+#include <list>
+#include <queue>
+#include <forward_list>
 #include <unordered_map>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -410,6 +414,56 @@ namespace Recollection_Test
 			//assert
 			resVal = std::equal(inTape.begin(), inTape.end(), initializer_list<int>{2,3}.begin());
 			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(Forward_List_PushFront_Init_123_Exp_123)
+		{
+			//arrange
+			forward_list<int> inTape{ 1,2,3 };
+			bool resVal = true;
+
+			//act
+			inTape.push_front(4);
+			inTape.pop_front();
+
+			//assert
+			resVal = std::equal(inTape.begin(), inTape.end(), initializer_list<int>{1, 2, 3}.begin());
+			Assert::IsTrue(resVal);
+		}
+
+		TEST_METHOD(Stack_Push_Pop_ExpSize_0)
+		{
+			//arrange
+			stack<int> inTape;
+			bool resVal = true;
+			int expSize = 0;
+			int rcSize = 1;
+
+			//act
+			inTape.push(4);
+			inTape.pop();
+			rcSize = inTape.size();
+
+			//assert
+			Assert::AreEqual(expSize, rcSize);
+		}
+
+		TEST_METHOD(Queue_Push_Push_Pop_ExpVal_1)
+		{
+			//arrange
+			queue<int> inTape;
+			bool resVal = true;
+			int expVal = 1;
+			int rcVal = 1;
+
+			//act
+			inTape.push(0);
+			inTape.push(1);
+			inTape.pop();
+			expVal = inTape.front();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
 		}
 
 		TEST_METHOD(UnorderedMap_Int_String_AccessToValue)
