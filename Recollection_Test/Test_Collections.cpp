@@ -49,6 +49,24 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, rcVal);
 		}
 
+		TEST_METHOD(Vector_OfIntPtrs_CopyCTOR)
+		{
+			//arrange
+
+			vector<int*> tape;
+			int *fstPtr = new int(0);
+			int *sndPtr = new int(1);
+
+			//act
+			tape.push_back(fstPtr);
+			tape.push_back(sndPtr);
+			tape.pop_back();
+			tape.pop_back();
+
+			//assert
+			Assert::IsTrue(true);
+		}
+
 		TEST_METHOD(Vector_AddThreeTimes_PeekLastWithParenthesisOperator_2)
 		{
 			//arrange
@@ -378,6 +396,20 @@ namespace Recollection_Test
 			//assert
 
 			Assert::AreEqual(expSize, rcSize);
+		}
+
+		TEST_METHOD(List_PopFront_Init_123_Exp_23)
+		{
+			//arrange
+			list<int> inTape{ 1,2,3 };
+			bool resVal = true;
+
+			//act
+			inTape.pop_front();
+
+			//assert
+			resVal = std::equal(inTape.begin(), inTape.end(), initializer_list<int>{2,3}.begin());
+			Assert::IsTrue(resVal);
 		}
 
 		TEST_METHOD(UnorderedMap_Int_String_AccessToValue)
