@@ -68,16 +68,5 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, *initVal);
 		}
 
-		TEST_METHOD(VariousFeatures_Functional_Add3_5)
-		{
-			//arrange
-			int expVal = 5;
-
-
-			//assert
-			Assert::AreEqual(expVal, retVal);
-		}
-
-
 	};
 }
