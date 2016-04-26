@@ -21,4 +21,4 @@ int SomeClass::IwillThrowException()
 {
 	throw OwnException();
 	return 3;
-}
+} 
