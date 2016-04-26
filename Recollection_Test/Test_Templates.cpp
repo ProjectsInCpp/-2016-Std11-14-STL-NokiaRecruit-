@@ -4,6 +4,7 @@
 #include "SomeClass.h"
 #include "Utils.h"
 #include "Templates\PackageTypeInline.h"
+#include "ClassWithTemplateMethod.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -55,6 +56,22 @@ namespace Recollection_Test
 
 			//act
 			rcVal = obj->GetPtr();
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+			delete obj;
+		}
+
+		TEST_METHOD(CClassWithTemplateMethod_GetGeneric_1)
+		{
+			//arrange
+			int expVal = 1;
+			int inVal = 1;
+			int rcVal = -1;
+			auto *obj = new ClassWithTemplateMethod();
+
+			//act
+			rcVal = obj->GetGeneric<int>(inVal);
 
 			//assert
 			Assert::AreEqual(expVal, rcVal);

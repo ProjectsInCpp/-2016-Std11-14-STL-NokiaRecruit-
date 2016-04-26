@@ -78,15 +78,15 @@
     <ClInclude Include="OwnException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ClassWithTemplateMethod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="VariousFeatures.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SomeClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Inheritance\InheritFromPrivateInheritance.cpp">
@@ -123,9 +123,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Inheritance\Multiple_Virtual\WingedAnimal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Templates\PackageTypeInline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

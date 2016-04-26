@@ -126,6 +126,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassWithTemplateMethod.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Bat.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Animal.h" />
     <ClInclude Include="Inheritance\FilledShape.h" />
@@ -159,8 +160,6 @@
     <ClCompile Include="Inheritance\Shape.cpp" />
     <ClCompile Include="Inheritance\MultiInheritance.cpp" />
     <ClCompile Include="Inheritance\Multiple_Virtual\Mammal.cpp" />
-    <ClCompile Include="Templates\PackageTypeInline.cpp" />
-    <ClCompile Include="SomeClass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
