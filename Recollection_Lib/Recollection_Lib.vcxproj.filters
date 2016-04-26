@@ -75,6 +75,9 @@
     <ClInclude Include="Templates\PackageTypeInline.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OwnException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -10,6 +10,7 @@ public:
 	~SomeClass();
 	int showValFromVariousFeaturePrivateMethod(VariousFeatures& aInput);
 	friend int friendlyMethodGetVal(VariousFeatures* aInVal);
+	int IwillThrowException();
 };
 
 #endif

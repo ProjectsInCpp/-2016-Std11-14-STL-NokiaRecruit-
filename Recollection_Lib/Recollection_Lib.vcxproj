@@ -138,6 +138,7 @@
     <ClInclude Include="Inheritance\MultiInheritance.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Mammal.h" />
     <ClInclude Include="Inheritance\Multiple_Virtual\Utils.h" />
+    <ClInclude Include="OwnException.h" />
     <ClInclude Include="Templates\PackageTypeInline.h" />
     <ClInclude Include="SomeClass.h" />
     <ClInclude Include="Utils.h" />

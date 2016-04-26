@@ -233,38 +233,61 @@ void TestingMonomorphicTell_Static()
 //	system("Pause");
 //}
 
-#include <memory>
-#include "VariousFeatures.h"
-#include "Inheritance\Shape.h"
+//#pragma region ******************************** INTELLIGENCE_POINTERS ****************************************
+//#include <memory>
+//#include "VariousFeatures.h"
+//#include "Inheritance\Shape.h"
+//
+//void main()
+//{
+//	{
+//		cout << endl << "Shared Pointer " << endl;
+//		auto* namedPtr = new CShape{ 1 };
+//		shared_ptr<CShape> scPtrForNamedPtr{ namedPtr };
+//		shared_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+//		shared_ptr<CShape> alias = scPtrForUnknowPtr;
+//
+//		cout << "Alias "<< alias->value << endl;
+//		cout << "scPtrForUnknowPtr " << scPtrForUnknowPtr->value << endl;
+//
+//		scPtrForNamedPtr.reset();
+//		scPtrForUnknowPtr.reset();
+//		alias.reset();
+//		cout << " Upper are own dtor Call" << endl;
+//	}
+//	{
+//		cout << endl << "Unique Pointer " << endl;
+//
+//		CShape* namedPtr = new CShape{ 1 };
+//		{
+//			unique_ptr<CShape> scPtrForKnowPtr{ namedPtr };
+//			unique_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+//			unique_ptr<CShape> alias = move(scPtrForUnknowPtr);
+//			cout << "Alias " << alias->value << endl;
+//		}	
+//		cout << "elo" << endl;
+//	}
+//	system("Pause");
+//}
+//#pragma endregion
+
+#include "OwnException.h"
+#include <string>
+#include <iostream>
+#include "SomeClass.h"
+
+using namespace std;
 
 void main()
 {
+	SomeClass obj;
+	try
 	{
-		cout << endl << "Shared Pointer " << endl;
-		auto* namedPtr = new CShape{ 1 };
-		shared_ptr<CShape> scPtrForNamedPtr{ namedPtr };
-		shared_ptr<CShape> scPtrForUnknowPtr{ new CShape };
-		shared_ptr<CShape> alias = scPtrForUnknowPtr;
-
-		cout << "Alias "<< alias->value << endl;
-		cout << "scPtrForUnknowPtr " << scPtrForUnknowPtr->value << endl;
-
-		scPtrForNamedPtr.reset();
-		scPtrForUnknowPtr.reset();
-		alias.reset();
-		cout << " Upper are own dtor Call" << endl;
+		obj.IwillThrowException();
 	}
+	catch (OwnException& e)
 	{
-		cout << endl << "Unique Pointer " << endl;
-
-		CShape* namedPtr = new CShape{ 1 };
-		{
-			unique_ptr<CShape> scPtrForKnowPtr{ namedPtr };
-			unique_ptr<CShape> scPtrForUnknowPtr{ new CShape };
-			unique_ptr<CShape> alias = move(scPtrForUnknowPtr);
-			cout << "Alias " << alias->value << endl;
-		}	
-		cout << "elo" << endl;
+		cout << e.what();
 	}
 	system("Pause");
 }
