@@ -4,7 +4,7 @@
 
 #include "Shape.h"
 
-class CPublicInheritance : public CShape
+class CPublicInheritance: public CShape
 {
 public:
 	CPublicInheritance();

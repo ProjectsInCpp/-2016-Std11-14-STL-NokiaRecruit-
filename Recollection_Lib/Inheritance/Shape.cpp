@@ -27,3 +27,8 @@ int CShape::GetVertices()
 {
 	return vertices;
 }
+
+void CShape::perform()
+{
+	;
+}

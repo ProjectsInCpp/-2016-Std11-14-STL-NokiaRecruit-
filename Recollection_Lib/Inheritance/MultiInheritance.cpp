@@ -13,3 +13,8 @@ CMultiInheritance::~CMultiInheritance()
 {
 	cout << "CMultiInheritance DTOR" << endl;
 }
+
+void CMultiInheritance::perform()
+{
+	;
+}

@@ -27,6 +27,24 @@ namespace Recollection_Test
 			Assert::AreEqual(expVal, rcVal);
 		}
 
+		//int value(int a, int b)
+		//{
+		//	return a + b;
+		//}
+		TEST_METHOD(DeclType_StaticInt_50)
+		{
+			//arrange
+			int expVal = 50;
+			int inVal1 = 20;
+			int inVal2 = 30;
+
+			//act
+			decltype( VariousFeatures::suma(3,2) ) rcVal = VariousFeatures::suma(inVal1, inVal2);
+
+			//assert
+			Assert::AreEqual(expVal, rcVal);
+		}
+
 		TEST_METHOD(VariousFeatures_ChangeVal_ConstantMethod_0)
 		{
 			//arrange

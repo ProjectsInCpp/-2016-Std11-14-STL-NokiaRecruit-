@@ -11,6 +11,7 @@ class CMultiInheritance : public CShape, public CFilledShape
 public:
 	CMultiInheritance();
 	~CMultiInheritance();
+	virtual void perform() override;
 };
 
 #endif

@@ -20,6 +20,7 @@ public:
 	CShape();
 	CShape(int aVal);
 	~CShape();
+	virtual void perform();
 };
 
 #endif
