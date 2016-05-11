@@ -1,4 +1,2 @@
 ﻿  Recollection_Console.cpp
-d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_lib\inheritance\multiple_virtual\bat.h(10): warning C4250: 'CBat': inherits 'CMammal::CMammal::yell' via dominance
-  d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_lib\inheritance\multiple_virtual\mammal.h(11): note: see declaration of 'CMammal::yell'
   Recollection_Console.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Console.exe

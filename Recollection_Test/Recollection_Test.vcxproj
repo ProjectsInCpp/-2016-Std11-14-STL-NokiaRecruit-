@@ -160,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test_Collections.cpp" />
+    <ClCompile Include="Test_Ex1.cpp" />
+    <ClCompile Include="Test_Ex2.cpp" />
+    <ClCompile Include="Test_Ex3.cpp" />
     <ClCompile Include="Test_Generics.cpp" />
     <ClCompile Include="Test_Inheritances.cpp" />
     <ClCompile Include="Test_Friendship.cpp" />

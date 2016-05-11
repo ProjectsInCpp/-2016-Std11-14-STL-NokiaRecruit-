@@ -18,6 +18,9 @@ namespace Utils {
 		GREEN,
 		RED
 	};
+	//int solution1(vector<int> &A) {
+	//	return A.size();
+	//}
 };
 
 #endif
