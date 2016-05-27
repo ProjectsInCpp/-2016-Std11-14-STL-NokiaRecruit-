@@ -1,3 +1,7 @@
-﻿  Test_Ex2.cpp
+﻿  Test_Codility_Ex2.cpp
+  Test_Codility_Ex1.cpp
+d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_test\test_codility_ex1.cpp(26): warning C4018: '>': signed/unsigned mismatch
+d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_test\test_codility_ex1.cpp(35): warning C4018: '>=': signed/unsigned mismatch
+  Generating Code...
      Creating library D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Test.lib and object D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Test.exp
   Recollection_Test.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Test.dll

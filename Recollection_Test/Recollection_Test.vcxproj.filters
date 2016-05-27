@@ -62,13 +62,10 @@
     <ClCompile Include="Test_Generics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Test_Ex1.cpp">
+    <ClCompile Include="Test_Codility_Ex1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Test_Ex2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Test_Ex3.cpp">
+    <ClCompile Include="Test_Codility_Ex2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
