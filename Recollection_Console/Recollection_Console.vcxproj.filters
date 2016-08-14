@@ -35,5 +35,8 @@
     <ClCompile Include="ScopedEnums.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Conversions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
