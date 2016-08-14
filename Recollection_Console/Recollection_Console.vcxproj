@@ -148,6 +148,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="OwnStreamManipulator.cpp" />
     <ClCompile Include="Recollection_Console.cpp" />
     <ClCompile Include="ScopedEnums.cpp" />
     <ClCompile Include="stdafx.cpp">
