@@ -14,7 +14,7 @@ using namespace std;
 #pragma region ****** SHRINKED_BEFORE_TEST ************************
 ////
 //#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
-//
+////
 ////void CreateCShapeObj()
 ////{
 ////	CShape obj;
@@ -39,41 +39,42 @@ using namespace std;
 ////{
 ////	CBat obj;
 ////}
-////
-////void CreateCBatObjAndPointToItByCAnimal()
-////{
-////	CAnimal* obj = new CBat();
-////	delete obj;
-////}// to test how virtual DTORS work, go to this class hierarchy and uncomment virtual keywords
+//
+//void CreateCBatObjAndPointToItByCAnimal()
+//{
+//	CAnimal* obj = new CBat();
+//	delete obj;
+//}// to test how virtual DTORS work, go to this class hierarchy and uncomment virtual keywords
 //
 //#pragma endregion
-////void CreateObjectCAnimalAndYell()
-////{
-////	cout << "******************CAnimal Static Obj "<<endl;
-////	CAnimal obj;
-////	obj.yell();
-////}
-////
-////void CreateObjectCMammalAndYell()
-////{
-////	cout << "******************CMammal Static Obj " << endl;
-////	CMammal obj;
-////	obj.yell();
-////}
+//void CreateObjectCAnimalAndYell()
+//{
+//	cout << "******************CAnimal Static Obj "<<endl;
+//	CAnimal obj;
+//	obj.yell();
+//}
+//
+//void CreateObjectCMammalAndYell()
+//{
+//	cout << "******************CMammal Static Obj " << endl;
+//	CMammal obj;
+//	obj.yell();
+//}
 //
 //void CreateObjectCMammalTieToToCAnimalAndYell()
 //{
 //	CMammal obj;
 //	CAnimal obj2 = obj;
-//	obj.yell();
+//	obj2.yell();
 //}
 //
+///*
 //void CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell()
 //{
 //	CMammal obj;
 //	CAnimal obj2 = obj;
-//	((CAnimal)obj).yell();
-//}
+//	(static_cast<CMammal)obj2).yell();
+//}*/
 //
 //void TestingPolymorphicYellOnMammalAndAnimal_Static()
 //{
@@ -162,6 +163,7 @@ using namespace std;
 //
 //	CAnimal& polymorph2 = animal;
 //	polymorph = polymorph2;
+//
 //	polymorph.yell();
 //}
 //
@@ -185,116 +187,130 @@ using namespace std;
 //
 //void main()
 //{
-//#pragma region ************** TESTING SIMPLE CTORS ************************
-////	cout << "Hello World" << endl;
-////	CreateCShapeObj();
-////	cout << endl;
-////	CreateCFilledShapeObj();
-////	cout << endl;
-////#pragma endregion
-////#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
-////	CreatePublicInheritanceObj();
-////	cout << endl;
-////	CreateCMultiInheritanceObj();
-////	cout << endl;
-////	CreateCBatObj();
-////	cout << endl;
-////
-////	CreateCBatObjAndPointToItByCAnimal();
-////	cout << endl;
+//	//#pragma region ************** TESTING SIMPLE CTORS ************************
+//	cout << "Hello World" << endl;
+//	//CreateCShapeObj();
+//	cout << endl;
+//	//CreateCFilledShapeObj();
+//	cout << endl;
 //#pragma endregion
+//#pragma region ************** TESTING COMPLEX CTORS AND DTORS CALLS ******
+//	//CreatePublicInheritanceObj();
+//	cout << endl;
+//	//CreateCMultiInheritanceObj();
+//	cout << endl;
+//	//CreateCBatObj();
+//	cout << endl;
 //
-//	//CreateObjectCAnimalAndYell();
-//	//cout << endl;
-//	//CreateObjectCMammalAndYell();
-//	//cout << endl;
-//	//CreateObjectCMammalTieToToCAnimalAndYell();
-//	//cout << endl;
-//	//CreateObjectCMammalTieToToCAnimalAndYell();
-//	//cout << endl;
-//	//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
-//	//cout << endl;
-//	/*
-//	TestingPolymorphicYell_Dynamic();
+//	//CreateCBatObjAndPointToItByCAnimal();
 //	cout << endl;
-//	TestingMonomorphicTell_Dynamic();
-//	cout << endl;
-//	TestingPolymorphicYell_Static();
-//	cout << endl;
-//	TestingMonomorphicTell_Static();
-//	cout << endl;
-//	TestingPolymorphicYell_Static_ByRef();
-//	cout << endl;*/
-// #pragma region ********************* LAMBDAS *****************************
-//	//int(*fun)(int, int) = dodaj;
-//
-//	////act
-//	//int retVal = (*fun)(2, 3);
-//	//cout << retVal;
-// # pragma endregion
+//	//#pragma endregion
+//	//
+//		//CreateObjectCAnimalAndYell();
+//		cout << endl;
+//		//CreateObjectCMammalAndYell();
+//		cout << endl;
+//			CreateObjectCMammalTieToToCAnimalAndYell();
+//		cout << endl;
+//		//CreateObjectCMammalTieToToCAnimalCastToCAnimalAndYell();
+//		cout << endl;
+//		
+//		//TestingPolymorphicYell_Dynamic();
+//		cout << endl;
+//		//TestingMonomorphicTell_Dynamic();
+//		cout << endl;
+//		//TestingPolymorphicYell_Static();
+//		cout << endl;
+//		//TestingMonomorphicTell_Static();
+//		cout << endl;
+//		TestingPolymorphicYell_Static_ByRef();
+//		cout << endl;
+	// #pragma region ********************* LAMBDAS *****************************
+	//	//int(*fun)(int, int) = dodaj;
+	//
+	//	////act
+	//	//int retVal = (*fun)(2, 3);
+	//	//cout << retVal;
+	// # pragma endregion
+	//{
+	//	CShape obj1;
+	//	SomeClass ob12;
+	//}
+	//	system("Pause");
+	//}
+	//
+	////#pragma region ******************************** INTELLIGENCE_POINTERS ****************************************
+	////#include <memory>
+	////#include "VariousFeatures.h"
+	////#include "Inheritance\Shape.h"
+	////
+	////void main()
+	////{
+	////	{
+	////		cout << endl << "Shared Pointer " << endl;
+	////		auto* namedPtr = new CShape{ 1 };
+	////		shared_ptr<CShape> scPtrForNamedPtr{ namedPtr };
+	////		shared_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+	////		shared_ptr<CShape> alias = scPtrForUnknowPtr;
+	////
+	////		cout << "Alias "<< alias->value << endl;
+	////		cout << "scPtrForUnknowPtr " << scPtrForUnknowPtr->value << endl;
+	////
+	////		scPtrForNamedPtr.reset();
+	////		scPtrForUnknowPtr.reset();
+	////		alias.reset();
+	////		cout << " Upper are own dtor Call" << endl;
+	////	}
+	////	{
+	////		cout << endl << "Unique Pointer " << endl;
+	////
+	////		CShape* namedPtr = new CShape{ 1 };
+	////		{
+	////			unique_ptr<CShape> scPtrForKnowPtr{ namedPtr };
+	////			unique_ptr<CShape> scPtrForUnknowPtr{ new CShape };
+	////			unique_ptr<CShape> alias = move(scPtrForUnknowPtr);
+	////			cout << "Alias " << alias->value << endl;
+	////		}	
+	////		cout << "elo" << endl;
+	////	}
+	////	system("Pause");
+	////}
+	////#pragma endregion
+	////
+	//#include "OwnException.h"
+	//#include <string>
+	//#include <iostream>
+	//#include "SomeClass.h"
+	//
+	//using namespace std;
+	//
+	//void main()
+	//{
+	//	SomeClass obj;
+	//	try
+	//	{
+	//		obj.IwillThrowException();
+	//	}
+	//	catch (OwnException& e)
+	//	{
+	//		cout << e.what();
+	//	}
+	//	system("Pause");
+	//}
+#pragma endregion
+//int main()
 //{
-//	CShape obj1;
-//	SomeClass ob12;
-//}
+//    enum class SIEMA { jeden, dwa };
+//    int jeden = 3;
+//
+//	VariousFeatures obj1;
+//	cout << "elo";
+//
+//	VariousFeatures obj2();
+//	cout << "elo2";
+//
+//	VariousFeatures obj3{};
+//	cout << "elo3";
+//
 //	system("Pause");
 //}
-//
-////#pragma region ******************************** INTELLIGENCE_POINTERS ****************************************
-////#include <memory>
-////#include "VariousFeatures.h"
-////#include "Inheritance\Shape.h"
-////
-////void main()
-////{
-////	{
-////		cout << endl << "Shared Pointer " << endl;
-////		auto* namedPtr = new CShape{ 1 };
-////		shared_ptr<CShape> scPtrForNamedPtr{ namedPtr };
-////		shared_ptr<CShape> scPtrForUnknowPtr{ new CShape };
-////		shared_ptr<CShape> alias = scPtrForUnknowPtr;
-////
-////		cout << "Alias "<< alias->value << endl;
-////		cout << "scPtrForUnknowPtr " << scPtrForUnknowPtr->value << endl;
-////
-////		scPtrForNamedPtr.reset();
-////		scPtrForUnknowPtr.reset();
-////		alias.reset();
-////		cout << " Upper are own dtor Call" << endl;
-////	}
-////	{
-////		cout << endl << "Unique Pointer " << endl;
-////
-////		CShape* namedPtr = new CShape{ 1 };
-////		{
-////			unique_ptr<CShape> scPtrForKnowPtr{ namedPtr };
-////			unique_ptr<CShape> scPtrForUnknowPtr{ new CShape };
-////			unique_ptr<CShape> alias = move(scPtrForUnknowPtr);
-////			cout << "Alias " << alias->value << endl;
-////		}	
-////		cout << "elo" << endl;
-////	}
-////	system("Pause");
-////}
-////#pragma endregion
-////
-#include "OwnException.h"
-#include <string>
-#include <iostream>
-#include "SomeClass.h"
-
-using namespace std;
-
-void main()
-{
-	SomeClass obj;
-	try
-	{
-		obj.IwillThrowException();
-	}
-	catch (OwnException& e)
-	{
-		cout << e.what();
-	}
-	system("Pause");
-}
-#pragma endregion

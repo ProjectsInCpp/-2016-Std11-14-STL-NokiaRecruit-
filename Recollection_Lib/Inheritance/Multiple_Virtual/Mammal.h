@@ -6,13 +6,11 @@ class CMammal :
 	public virtual CAnimal
 {
 public:
-	//virtual 
-		void breathe();
+	void breathe();
 	virtual void yell() override;
 	void tell();
 
 	CMammal();
-	virtual 
-		~CMammal();
+	virtual ~CMammal();
 };
 

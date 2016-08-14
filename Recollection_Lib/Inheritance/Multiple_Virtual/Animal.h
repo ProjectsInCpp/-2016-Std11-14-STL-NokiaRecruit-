@@ -5,13 +5,11 @@
 class CAnimal
 {
 public:
-	//virtual 
-		void eat();
+	void eat();
 	virtual void yell();
 	void tell();
 
 	CAnimal();
-	virtual 
-		~CAnimal();
+	virtual ~CAnimal();
 };
 

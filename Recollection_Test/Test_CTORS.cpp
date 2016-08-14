@@ -36,6 +36,7 @@ namespace Recollection_Test
 		TEST_METHOD(VariousFeatures_Statically_CTOR_True)
 		{
 			//arrange
+			int a = 3;
 			VariousFeatures tempObj();
 
 			//act
@@ -47,6 +48,7 @@ namespace Recollection_Test
 		TEST_METHOD(VariousFeatures_Statically_CTOR_WithoutParenthesis_True)
 		{
 			//arrange
+			int b = 4;
 			VariousFeatures tempObj;
 
 			//act
