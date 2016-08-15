@@ -20,10 +20,10 @@ std::ios_base& setSeparatorSpace(std::ios_base& inStream)
 //    return inStream;
 //}
 
-int main()
-{
-    std::stringstream someStream;
-    std::string someString = "lValueStr";
-    someStream << setSeparatorSpace << someString << "rValueStr" << 3 << 'elo';
-    std::cout << 3;
-}
+//int main()
+//{
+//    std::stringstream someStream;
+//    std::string someString = "lValueStr";
+//    someStream << setSeparatorSpace << someString << "rValueStr" << 3 << 'elo';
+//    std::cout << 3;
+//}

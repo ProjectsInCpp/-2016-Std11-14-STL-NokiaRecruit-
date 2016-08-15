@@ -1,2 +1,18 @@
-﻿  VariousFeatures.cpp
+﻿  stdafx.cpp
+  WingedAnimal.cpp
+  VariousFeatures.cpp
+  Mammal.cpp
+  MultiInheritance.cpp
+  Shape.cpp
+  PublicInheritance.cpp
+  ProtectedInheritance.cpp
+  PrivateInheritance.cpp
+  InheritFromProtectedInheritance.cpp
+  InheritFromPrivateInheritance.cpp
+  FilledShape.cpp
+  Animal.cpp
+  Bat.cpp
+d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_lib\inheritance\multiple_virtual\bat.h(10): warning C4250: 'CBat': inherits 'CMammal::CMammal::yell' via dominance
+  d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_lib\inheritance\multiple_virtual\mammal.h(10): note: see declaration of 'CMammal::yell'
+  Generating Code...
   Recollection_Lib.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Lib.lib

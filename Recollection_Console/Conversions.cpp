@@ -10,7 +10,7 @@ public:
         return std::to_string(arg);
     }
 };
-//
+
 //int main()
 //{
 //    std::cout << SimplePackage::retVal(true) << "\n";
