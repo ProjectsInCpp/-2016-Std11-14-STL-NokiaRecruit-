@@ -4,7 +4,9 @@
 *.o
 *.obj
 
+# Excluded folders
 Debug/
+ipch/
 
 # Precompiled Headers
 *.gch
