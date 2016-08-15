@@ -1,4 +1,0 @@
-﻿  Test_CTORS.cpp
-d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_test\test_ctors.cpp(40): warning C4930: 'VariousFeatures tempObj(void)': prototyped function not called (was a variable definition intended?)
-d:\clouds\onedrive\github\-2016-std11-14-stl-nokiarecruit-\recollection_lib\templates\packagetypeinline.h(62): warning C4172: returning address of local variable or temporary
-  Recollection_Test.vcxproj -> D:\Clouds\OneDrive\GitHub\-2016-Std11-14-STL-NokiaRecruit-\Recollection_Lib\Debug\Recollection_Test.dll
